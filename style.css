@@ -554,6 +554,22 @@ html{
     cursor: pointer;
 }
 
+.view_btn2{
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, .1);
+    padding: 16px;
+    width: 140px;
+    height: 48px;
+    cursor: pointer;
+    display: none;
+}
+
+.work_container3
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 
 @media screen and (min-width:768px) {
     .work
@@ -606,6 +622,26 @@ html{
         height: 300px;
         object-fit: cover;
         max-width: 550px;
+    }
+
+
+    .work_container3
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .images3{
+        width: 50%;
+    }
+
+
+    .view_btn {
+        display: none; /* Hide "View More" button at smaller screens */
+    }
+    
+    .view_btn2 {
+        display: block; /* Show "View Less" button at smaller screens */
     }
 }
 

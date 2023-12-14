@@ -42,16 +42,58 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-
-
-
 // close nav
 function closeMenu() {
   // Get the checkbox element
-  var menuToggle = document.getElementById('menuToggle');
+  var menuToggle = document.getElementById("menuToggle");
 
   // Close the menu by unchecking the checkbox
   if (menuToggle.checked) {
-      menuToggle.checked = false;
+    menuToggle.checked = false;
   }
 }
+
+// work
+document.addEventListener("DOMContentLoaded", function () {
+  const viewMoreButton = document.querySelector(".view_btn");
+  const viewLessButton = document.querySelector(".view_btn2");
+  const container2 = document.querySelector(".work_container2");
+  const container3 = document.querySelector(".work_container3");
+
+  // Initial setup based on screen width
+  if (window.innerWidth < 768) {
+    container2.style.display = "none";
+    container3.style.display = "none";
+  }
+
+  if (window.innerWidth >= 768) {
+    container2.style.display = "block";
+    container3.style.display = "none";
+  }
+
+  // Event listener for "View More" button
+  viewMoreButton.addEventListener("click", function () {
+    container2.style.display = "flex";
+    container2.style.flexDirection = "column";
+    container3.style.display = "flex";
+    viewMoreButton.style.display = "none";
+    viewLessButton.style.display = "block";
+  });
+
+  // Event listener for "View Less" button
+  if (window.innerWidth >= 768) {
+    viewLessButton.addEventListener("click", function () {
+      container2.style.display = "block";
+      container3.style.display = "none"; // Add this line to hide container3 as well
+      viewMoreButton.style.display = "block";
+      viewLessButton.style.display = "none";
+    });
+  } else if (window.innerWidth < 768) {
+    viewLessButton.addEventListener("click", function () {
+      container2.style.display = "none";
+      container3.style.display = "none"; // Add this line to hide container3 as well
+      viewMoreButton.style.display = "block";
+      viewLessButton.style.display = "none";
+    });
+  }
+});
