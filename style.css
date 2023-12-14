@@ -536,7 +536,7 @@ html{
 
 
 .view{
-    margin: 64px auto 40px;
+    margin: 0px auto 40px;
 }
 
 .view div{
@@ -570,7 +570,7 @@ html{
 
     .work_container
     {
-        margin-top: -30px;
+        margin-top: -110px;
     }
 
     .suman>img{
@@ -603,9 +603,17 @@ html{
 
     .jogmai_cascade>img{
         width: 95%;
-        height: 200px;
+        height: 300px;
         object-fit: cover;
         max-width: 550px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .images_description
+    {
+        width: 85%;
+        margin: 0 auto;
     }
 }
 
@@ -714,7 +722,7 @@ html{
 @media screen and (min-width: 1000px)
 {
     .image_container{
-        gap: 40px;
+        gap: 80px;
     }
 
     .arrow
