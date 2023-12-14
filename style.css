@@ -281,14 +281,14 @@ html{
     text-decoration: none;
     color: white;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 400;
     font-family: 'Roboto',sans-serif;
 }
 .project_button a{
     text-decoration: none;
     color: rgba(159, 116, 56, 1);
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 400;
     font-family: 'Roboto',sans-serif;
 }
 
@@ -438,7 +438,7 @@ html{
     
     color: rgba(159, 116, 56, 1);
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 400;
     font-family: 'Roboto',sans-serif;
     text-decoration: none;
 }
@@ -547,27 +547,49 @@ html{
 
 .view_btn{
     outline: none;
-    border: 1px solid rgba(0, 0, 0, .1);
+    border: 1px solid rgba(0, 0, 0);
     padding: 16px;
     width: 140px;
     height: 48px;
     cursor: pointer;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 400;
+    font-size: 16px;
 }
 
 .view_btn2{
     outline: none;
-    border: 1px solid rgba(0, 0, 0, .1);
+    border: 1px solid rgba(0, 0, 0);
     padding: 16px;
     width: 140px;
     height: 48px;
     cursor: pointer;
     display: none;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 400;
+    font-size: 16px;
 }
 
 .work_container3
 {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
+    width: 95%;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.hide3>img{
+    width: 98%;
+    height: 356px;
+    object-fit: cover;
+    max-width: 600px;
+}
+
+.images_description.three
+{
+    margin-bottom: 50px;
 }
 
 
@@ -637,11 +659,7 @@ html{
 
 
     .view_btn {
-        display: none; /* Hide "View More" button at smaller screens */
-    }
-    
-    .view_btn2 {
-        display: block; /* Show "View Less" button at smaller screens */
+        display: block; 
     }
 }
 
