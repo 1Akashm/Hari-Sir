@@ -145,8 +145,10 @@ html{
 }
 
 .button{
-   width: 40%;
-   margin: 0 auto;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 
 .travel_li{
@@ -158,6 +160,7 @@ html{
     background: rgba(159, 116, 56, 1);
     outline: none;
     border: none;
+    Padding: 10px 20px;
 }
 
 .nav_button a{
@@ -166,7 +169,6 @@ html{
     text-decoration: none;
     width: 130px;
     height: 40px;
-    Padding: 8px 20px;
     text-align: center;
     display: flex;
     justify-content: center;
