@@ -41,3 +41,17 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+
+
+
+// close nav
+function closeMenu() {
+  // Get the checkbox element
+  var menuToggle = document.getElementById('menuToggle');
+
+  // Close the menu by unchecking the checkbox
+  if (menuToggle.checked) {
+      menuToggle.checked = false;
+  }
+}

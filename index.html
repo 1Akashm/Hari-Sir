@@ -29,12 +29,12 @@
         </div>
 
         <div class="navigation">
-          <input type="checkbox" class="toggle_menu" />
+          <input type="checkbox" class="toggle_menu" id="menuToggle"/>
           <div class="hamburger"></div>
           <ul class="menu">
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Work</a></li>
-            <li class="travel_li"><a href="#">Travel</a></li>
+            <li><a href="#service" onclick="closeMenu()">Services</a></li>
+            <li><a href="#work" onclick="closeMenu()">Work</a></li>
+            <li class="travel_li"><a href="#travel" onclick="closeMenu()">Travel</a></li>
 
             <div class="button">
               <button class="nav_button">
@@ -66,9 +66,9 @@
         </div>
 
         <div class="hero_button">
-          <button class="contact_button"><a href="#">Contact Now</a></button>
+          <button class="contact_button"><a href="mailto:hnb@gmail.com">Contact Now</a></button>
           <button class="project_button">
-            <a href="#">Explore Projects</a>
+            <a href="#work" onclick="closeMenu()">Explore Projects</a>
           </button>
         </div>
       </div>
@@ -82,14 +82,14 @@
 
     <!-- services section -->
     <!-- <h1 class="service">Services</h1> -->
-    <div class="service_container">
+    <div class="service_container" id="service">
       <div class="details_container">
         <div class="wrapper_services">
           <div>
-            <img src="./assets/review.png" alt="" width="48px" height="48px" />
+            <img src="./assets/review.png" alt="hand" width="48px" height="48px" />
           </div>
           <div class="title_services">
-            <h1>Services We Offer</h1>
+            <h1 >Services We Offer</h1>
             <p>
               We specialize in balancing project scope, satisfying stakeholders,
               and fulfilling project requirements.
@@ -99,7 +99,7 @@
 
         <div class="wrapper_services two">
           <div>
-            <img src="./assets/work.png" alt="" width="48px" height="48px" />
+            <img src="./assets/work.png" alt="briefcase" width="48px" height="48px" />
           </div>
           <div class="title_services">
             <h1>Our Expertise</h1>
@@ -115,7 +115,7 @@
           <div>
             <img
               src="./assets/handshake.png"
-              alt=""
+              alt="shake"
               width="48px"
               height="48px"
             />
@@ -138,9 +138,9 @@
 
     <!-- work -->
 
-    <div class="work_title">
+    <div class="work_title" id="work">
       <p>Portfolio</p>
-      <h1>Travel</h1>
+      <h1>Works</h1>
     </div>
 
 
@@ -206,7 +206,7 @@
 
 
     <!-- Travel -->
-    <div class="arrow_container">
+    <div class="arrow_container" id="travel">
       <h1>Travel</h1>
     <div class="image_container">
       <div class="flag initial">
@@ -276,7 +276,7 @@
       </div>
 
       <div class="footer_button">
-        <button>Get In Touch</button>
+        <button href="mailto:hbn@gmail.com"><a href="mailto:hbn@gmail.com">Get in Touch</a></button>
       </div>
     </div>
 
